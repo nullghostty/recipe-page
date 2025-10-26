@@ -1,0 +1,39 @@
+/* Colors */
+$rose-800: hsl(332 51% 18%);
+$rose-50: hsl(330 100% 98%);
+$stone-900: hsl(24 5% 18%);
+$stone-600: hsl(30 10% 34%);
+$stone-150: hsl(30 18% 87%);
+$stone-100: hsl(30 54% 90%);
+$brown-800: hsl(14 45% 36%);
+$white: hsl(0 0% 100%);
+
+/* Typography color scheme */
+.recipe__title {
+  color: $stone-900;
+}
+
+.recipe__description,
+.recipe__preparation-item,
+.recipe__ingredients-item,
+.recipe__instructions-item,
+.recipe__nutrition-note,
+.recipe__nutrition-cell--label {
+  color: $stone-600;
+}
+
+.recipe__preparation-title,
+.recipe__preparation-list .recipe__preparation-item::marker {
+  color: $rose-800;
+}
+
+.recipe__ingredients-title,
+.recipe__ingredients-list .recipe__ingredients-item::marker,
+.recipe__instructions-title,
+.recipe__instructions-list .recipe__instructions-item::marker,
+.recipe__nutrition-title,
+.recipe__nutrition-cell--value {
+  color: $brown-800;
+}
+
+
