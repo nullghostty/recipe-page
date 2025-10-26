@@ -1,4 +1,5 @@
 $spacing-150: 0.75rem;
+$spacing-200: 1rem;
 $spacing-300: 1.5rem;
 $spacing-400: 2rem;
 $spacing-500: 2.5rem;
@@ -16,6 +17,29 @@ $desktop: 1024px;
   @extend %flex-layout;
   gap: $spacing-400;
   padding: $spacing-500 $spacing-400;
+
+  .recipe__preparation {
+    @extend %flex-layout;
+    padding: $spacing-300;
+    gap: $spacing-200;
+    border-radius: $spacing-150;
+  }
+
+  .recipe__ingredients,
+  .recipe__instructions,
+  .recipe__nutrition {
+    @extend %flex-layout;
+    gap: $spacing-300;
+  }
+
+  .recipe__nutrition-table tbody {
+    @extend %flex-layout;
+    gap: $spacing-150;
+
+    .recipe__nutrition-row {
+      padding: 0 $spacing-400 $spacing-150 $spacing-400;
+    }
+  }
 }
 
 .recipe__main {
