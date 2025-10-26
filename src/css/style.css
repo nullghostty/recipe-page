@@ -1,3 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
 hr {
   border: none;
 }
@@ -50,13 +60,41 @@ hr {
   background: hsl(30, 18%, 87%);
 }
 
-.recipe__article {
+.recipe__main, .recipe__article {
   display: flex;
   flex-direction: column;
+}
+
+.recipe__article {
   gap: 2rem;
+  padding: 2.5rem 2rem;
 }
 
 /* Targets Tablet viewport width */
+@media (min-width: 768px) {
+  .recipe__article {
+    padding: 0;
+  }
+  .recipe__main {
+    border-radius: 1.5rem;
+    gap: 2.5rem;
+    padding: 2.5rem;
+    width: 38.5rem;
+    margin: auto;
+  }
+  .recipe__main img {
+    border-radius: 0.75rem;
+  }
+  body {
+    padding: 8rem 3rem;
+  }
+}
 /* Targets Desktop viewport width */
+@media (min-width: 1024px) {
+  .recipe__main {
+    width: 46rem;
+    margin: auto;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

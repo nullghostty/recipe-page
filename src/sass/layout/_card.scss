@@ -1,18 +1,53 @@
+$spacing-150: 0.75rem;
+$spacing-300: 1.5rem;
 $spacing-400: 2rem;
 $spacing-500: 2.5rem;
+$spacing-600: 3rem;
+$spacing-1600: 8rem;
 $tablet: 768px;
 $desktop: 1024px;
 
-.recipe__article {
+%flex-layout {
   display: flex;
   flex-direction: column;
+}
+
+.recipe__article {
+  @extend %flex-layout;
   gap: $spacing-400;
+  padding: $spacing-500 $spacing-400;
+}
+
+.recipe__main {
+  @extend %flex-layout;
 }
 
 /* Targets Tablet viewport width */
 @media (min-width: $tablet) {
+  .recipe__article {
+    padding: 0;
+  }
+  .recipe__main {
+    border-radius: $spacing-300;
+    gap: $spacing-500;
+    padding: $spacing-500;
+    width: 38.5rem;
+    margin: auto;
+
+    img {
+      border-radius: $spacing-150;
+    }
+  }
+
+  body {
+    padding: $spacing-1600 $spacing-600;
+  }
 }
 
 /* Targets Desktop viewport width */
 @media (min-width: $desktop) {
+  .recipe__main {
+    width: 46rem;
+    margin: auto;
+  }
 }
