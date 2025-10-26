@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
 *,
 *::before,
 *::after {
@@ -58,6 +59,58 @@ body {
 hr {
   height: 0.0625rem;
   background: hsl(30, 18%, 87%);
+}
+
+.recipe__title {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.recipe__ingredients-title,
+.recipe__instructions-title,
+.recipe__nutrition-title {
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.recipe__preparation-title {
+  /* Outfit regular default values (text-preset-4) */
+  font-family: Outfit;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.recipe__description,
+.recipe__preparation-item,
+.recipe__ingredients-item,
+.recipe__instructions-item,
+.recipe__nutrition-note,
+.recipe__nutrition-cell--label {
+  /* Outfit regular default values (text-preset-4) */
+  font-family: Outfit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.recipe__preparation-item-label,
+.recipe__instructions-item-label,
+.recipe__nutrition-cell--value {
+  /* Outfit regular default values (text-preset-4) */
+  font-family: Outfit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
 }
 
 .recipe__main, .recipe__article {
