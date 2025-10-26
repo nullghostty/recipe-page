@@ -1,0 +1,18 @@
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+$tablet: 768px;
+$desktop: 1024px;
+
+.recipe__article {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-400;
+}
+
+/* Targets Tablet viewport width */
+@media (min-width: $tablet) {
+}
+
+/* Targets Desktop viewport width */
+@media (min-width: $desktop) {
+}

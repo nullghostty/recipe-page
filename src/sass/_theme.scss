@@ -1,4 +1,4 @@
-/* Colors */
+/* Recipe Page Colors */
 $rose-800: hsl(332 51% 18%);
 $rose-50: hsl(330 100% 98%);
 $stone-900: hsl(24 5% 18%);
@@ -36,4 +36,21 @@ $white: hsl(0 0% 100%);
   color: $brown-800;
 }
 
+/* Card colors */
+body {
+  background: $stone-100;
+}
 
+.recipe__main {
+  background: $white;
+}
+
+.recipe__preparation {
+  background: $rose-50;
+}
+
+/* Divider styles */
+hr {
+  height: 0.0625rem;
+  background: $stone-150;
+}

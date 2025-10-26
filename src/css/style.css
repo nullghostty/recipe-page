@@ -1,4 +1,8 @@
-/* Colors */
+hr {
+  border: none;
+}
+
+/* Recipe Page Colors */
 /* Typography color scheme */
 .recipe__title {
   color: hsl(24, 5%, 18%);
@@ -26,5 +30,33 @@
 .recipe__nutrition-cell--value {
   color: hsl(14, 45%, 36%);
 }
+
+/* Card colors */
+body {
+  background: hsl(30, 54%, 90%);
+}
+
+.recipe__main {
+  background: hsl(0, 0%, 100%);
+}
+
+.recipe__preparation {
+  background: hsl(330, 100%, 98%);
+}
+
+/* Divider styles */
+hr {
+  height: 0.0625rem;
+  background: hsl(30, 18%, 87%);
+}
+
+.recipe__article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Targets Tablet viewport width */
+/* Targets Desktop viewport width */
 
 /*# sourceMappingURL=style.css.map */
